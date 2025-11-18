@@ -1,0 +1,182 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Welcome to Damascus Translation Services",
+    "description": "Professional translation services for all your needs.",
+    "heroTitle": "Precision, Confidentiality, and Cultural Nuance",
+    "heroSubtitle": "We connect your world through certified, high-quality translation.",
+    "ctaQuote": "Get a Free Quote",
+    "ctaServices": "Explore Services"
+  },
+  "about": {
+    "title": "About Damascus Translation Services",
+    "ourStory": {
+      "title": "Our Story",
+      "paragraph1": "Founded in 2010, Damascus Translation Services has grown from a small team of passionate linguists to a leading translation agency serving clients worldwide. Our journey began with a simple mission: to break down language barriers and facilitate clear communication across cultures.",
+      "paragraph2": "Over the years, we have built a reputation for excellence, accuracy, and reliability. Our team of certified translators and interpreters are not just language experts, but also specialists in various fields including legal, medical, technical, and literary translation.",
+      "paragraph3": "Today, we continue to uphold our founding principles while embracing new technologies and methodologies to deliver translation services that meet the evolving needs of our global clientele."
+    },
+    "team": {
+      "title": "Our Team",
+      "member1": {
+        "name": "Ahmed Hassan",
+        "position": "Founder & CEO",
+        "bio": "With over 20 years of experience in translation and localization, Ahmed founded Damascus Translation Services with a vision to create a bridge between cultures through language."
+      },
+      "member2": {
+        "name": "Sarah Johnson",
+        "position": "Head Translator",
+        "bio": "Sarah is a certified translator with expertise in legal and medical translations. She ensures the highest quality standards across all our translation projects."
+      },
+      "member3": {
+        "name": "Mohammed Al-Rashid",
+        "position": "Client Relations Manager",
+        "bio": "Mohammed is dedicated to ensuring our clients receive exceptional service from initial consultation to final delivery. He is the primary point of contact for our corporate clients."
+      }
+    },
+    "values": {
+      "title": "Our Values",
+      "quality": {
+        "title": "Quality Excellence",
+        "description": "We are committed to delivering translations of the highest quality, ensuring accuracy, consistency, and cultural appropriateness in every project."
+      },
+      "confidentiality": {
+        "title": "Confidentiality",
+        "description": "We understand the importance of confidentiality in translation services. All our translators sign strict non-disclosure agreements to protect your sensitive information."
+      },
+      "timeliness": {
+        "title": "Timeliness",
+        "description": "We respect deadlines and understand the importance of timely delivery. Our efficient workflow ensures your translations are completed on schedule."
+      },
+      "cultural": {
+        "title": "Cultural Sensitivity",
+        "description": "We recognize that translation is not just about words, but about conveying meaning across cultures. Our translations are culturally sensitive and contextually appropriate."
+      }
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive translation and interpretation solutions tailored to your specific needs",
+    "cta": "Request a Quote",
+    "document": {
+      "title": "Document Translation",
+      "description": "Professional translation of legal, medical, technical, and general documents with certified accuracy.",
+      "feature1": "Certified translations for official use",
+      "feature2": "Specialized translators for various industries",
+      "feature3": "Fast turnaround times"
+    },
+    "website": {
+      "title": "Website Localization",
+      "description": "Adapt your website content to different markets with cultural and linguistic precision.",
+      "feature1": "SEO-optimized translations",
+      "feature2": "Cultural adaptation of content",
+      "feature3": "Technical implementation support"
+    },
+    "interpretation": {
+      "title": "Interpretation Services",
+      "description": "Professional interpreters for conferences, meetings, and legal proceedings.",
+      "feature1": "Simultaneous and consecutive interpretation",
+      "feature2": "Specialized interpreters for various fields",
+      "feature3": "Equipment rental and setup"
+    },
+    "process": {
+      "title": "Our Process",
+      "step1": {
+        "title": "Consultation",
+        "description": "We discuss your specific needs and requirements to determine the best approach for your project."
+      },
+      "step2": {
+        "title": "Translation",
+        "description": "Our expert translators work on your project, ensuring accuracy and cultural appropriateness."
+      },
+      "step3": {
+        "title": "Review",
+        "description": "Each translation undergoes a thorough review process to ensure quality and consistency."
+      },
+      "step4": {
+        "title": "Delivery",
+        "description": "We deliver your completed translation in your preferred format, ready for use."
+      }
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "client1": {
+        "name": "Emily Rodriguez",
+        "position": "CEO, Global Tech Solutions",
+        "testimonial": "Damascus Translation Services has been instrumental in helping us expand into new markets. Their translations are not only accurate but also culturally nuanced, which has made all the difference in our international communications."
+      },
+      "client2": {
+        "name": "Dr. Michael Chen",
+        "position": "Medical Director, International Health Clinic",
+        "testimonial": "The medical translations provided by Damascus Translation Services have been exceptional. Their attention to detail and understanding of medical terminology has greatly improved our ability to serve patients from diverse linguistic backgrounds."
+      },
+      "client3": {
+        "name": "Fatima Al-Jamil",
+        "position": "Legal Counsel, Al-Jamil Law Firm",
+        "testimonial": "We rely on Damascus Translation Services for all our international legal document needs. Their certified translations are always accurate and delivered on time, which is crucial in our line of work."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team to discuss your translation needs",
+    "form": {
+      "title": "Send Us a Message",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "service": "Service Interested In",
+      "selectService": "Select a service",
+      "message": "Message",
+      "submit": "Send Message",
+      "successMessage": "Thank you for your message! We will get back to you within 24 hours."
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": {
+        "title": "Address",
+        "details": "123 Translation Street, Damascus, Syria"
+      },
+      "phone": {
+        "title": "Phone",
+        "details": "+963 11 123 4567"
+      },
+      "email": {
+        "title": "Email",
+        "details": "info@damascustranslation.com"
+      },
+      "hours": {
+        "title": "Business Hours",
+        "details": "Monday - Friday: 9:00 AM - 6:00 PM"
+      }
+    },
+    "map": {
+      "placeholder": "Interactive map will be displayed here"
+    }
+  },
+  "footer": {
+    "company": {
+      "description": "Professional translation services for all your needs. Connecting worlds through language."
+    },
+    "links": {
+      "title": "Quick Links",
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "contact": {
+      "title": "Contact Info",
+      "address": "123 Translation Street, Damascus, Syria",
+      "phone": "+963 11 123 4567",
+      "email": "info@damascustranslation.com"
+    },
+    "copyright": "Damascus Translation Services. All rights reserved."
+  }
+}
