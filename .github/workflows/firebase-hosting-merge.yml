@@ -16,6 +16,6 @@ jobs:
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{
-            secrets.FIREBASE_SERVICE_ACCOUNT_DAMASCUS_TRANSLATION_SER_95C5A }}
+            secrets.FIREBASE_SERVICE_ACCOUNT}}
           channelId: live
           projectId: damascus-translation-ser-95c5a

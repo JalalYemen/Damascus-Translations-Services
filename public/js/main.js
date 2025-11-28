@@ -1,27 +1,35 @@
-// main.js - This is correct.
+// main.js - Initialize Firebase and export services used by the app
 
-// Import the functions you need from the SDKs
+// Use the CDN-hosted modular SDK so this file works when loaded as a
+// browser module (script type="module").
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js';
 import { getAuth } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
 import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
 import { getStorage } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js';
 
-// Your web app's Firebase configuration
+// Firebase configuration for the new Firebase project
 const firebaseConfig = {
-  
-  apiKey: "AIzaSyA4bgEulJPrZYXgdKZFxo6ssShyUz_xGgE", 
-  authDomain: "damascus-translations.firebaseapp.com",
-  projectId: "damascus-translations",
-  storageBucket: "damascus-translations.appspot.com",
-  messagingSenderId: "150876826458",
-  appId: "1:150876826458:web:217bcf8dde8f51792c2163",
-  measurementId: "G-VHJ0C1EL7E"
+  apiKey: "AIzaSyAAZRzHUysD9f4QjWQTC_Vuhvtf9yKTsxI",
+  authDomain: "damascus-translation-ser-95c5a.firebaseapp.com",
+  projectId: "damascus-translation-ser-95c5a",
+  storageBucket: "damascus-translation-ser-95c5a.firebasestorage.app",
+  messagingSenderId: "427504697962",
+  appId: "1:427504697962:web:b1c9750affc7e3e77ac013",
+  measurementId: "G-CN1SEZGZMH"
 };
 
-// Initialize Firebase
+// Initialize Firebase app and services
 const app = initializeApp(firebaseConfig);
+let analytics = null;
+try {
+  analytics = getAnalytics(app);
+} catch (e) {
+  // Analytics may fail to initialize in non-browser or blocked environments
+  console.warn('Firebase analytics not initialized:', e && e.message ? e.message : e);
+}
 
-// Initialize and export Firebase services
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const storage = getStorage(app);
+export { analytics };
