@@ -102,55 +102,150 @@ body {
 
 /* --- MAIN PAGE SECTIONS --- */
 .hero-section {
-  padding: 24px 0 32px 0;
-  position: relative;
-  overflow: hidden;
+    padding: 100px 0 80px;
+    position: relative;
+    background: linear-gradient(135deg, var(--primary) 0%, #1a5ca0 100%);
+    color: #fff;
+    overflow: hidden;
 }
-
-/* Added: Ensure hero row is vertically centered for consistent spacing with EN */
-.hero-section .row {
-  align-items: stretch;
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none"/><path d="M0,0 L100,100 M100,0 L0,100" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></svg>');
+    opacity: 0.3;
 }
-
-.hero-text-col {
-  background: var(--primary);
-  color: #fff;
-  padding: 32px;
-  border-radius: 0 var(--radius) var(--radius) 0;
+.hero-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    flex-direction: row-reverse;
 }
-.hero-section .col-lg-6.text-center {
-  padding: 0;
-  border-radius: var(--radius) 0 0 var(--radius);
+.hero-text {
+    flex: 1;
+    padding-left: 40px;
 }
 .hero-title {
-  font-size: 30px;
-  font-weight: 800;
-  margin-bottom: 16px;
-  line-height: 1.15;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    color: #fff;
 }
 .hero-subtitle {
-  font-size: 19.2px;
-  opacity: 0.95;
-  margin-bottom: 16px;
-  max-width: 600px;
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    opacity: 0.9;
 }
-.hero-text-col ul {
-  font-size: 16px;
-  margin-bottom: 6px; /* Modified: Changed from 16px to 6px to match English */
-  color: #e0e7ef;
-  padding-right: 0;
+.hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
 }
-.hero-section .hero-image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  padding: 6px;
-  border: 4px solid var(--secondary);
-  border-radius: var(--radius) 0 0 var(--radius);
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1;
+    min-width: 200px;
+    flex-direction: row-reverse;
 }
-
-.hero-text-col .btn-primary {
-  margin-top: 10px; /* This value already matches the desired English spacing */
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+.feature-text h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    text-align: right;
+}
+.feature-text p {
+    font-size: 0.9rem;
+    margin: 0;
+    opacity: 0.8;
+    text-align: right;
+}
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.hero-btn {
+    padding: 14px 28px;
+    font-weight: 600;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.hero-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.hero-btn-outline {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.hero-btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+.hero-image-container {
+    flex: 1;
+    position: relative;
+}
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease;
+}
+.hero-image:hover {
+    transform: scale(1.02);
+}
+@media (max-width: 992px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        padding-left: 0;
+        margin-bottom: 40px;
+    }
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-features {
+        justify-content: center;
+    }
+}
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-actions {
+        justify-content: center;
+    }
+    .feature-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 }
 .section-title {
   font-weight: 700;
