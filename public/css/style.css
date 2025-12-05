@@ -1,3 +1,47 @@
+/* --- LOCAL FONTS IMPORT --- */
+/* Light (300) */
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/League Spartan/LeagueSpartan-Light.ttf') format('truetype');
+}
+/* Regular (400) */
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/League Spartan/LeagueSpartan-Regular.ttf') format('truetype');
+}
+/* Medium (500) */
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/League Spartan/LeagueSpartan-Medium.ttf') format('truetype');
+}
+/* SemiBold (600) */
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/League Spartan/LeagueSpartan-SemiBold.ttf') format('truetype');
+}
+/* Bold (700) */
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/League Spartan/LeagueSpartan-Bold.ttf') format('truetype');
+}
+/* Black (900) */
+@font-face {
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../assets/fonts/League Spartan/LeagueSpartan-Black.ttf') format('truetype');
+}
+
 :root {
     --primary: #3aa2e8;
     --secondary: #e8ac16;
@@ -9,8 +53,11 @@
     --navbar-height: 80px;
 }
 
+body, h1, h2, h3, h4, h5, h6, p, a, li, .btn, .navbar-brand {
+    font-family: 'League Spartan', sans-serif !important;
+}
+
 body {
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--dark);
     background: #fff;
     line-height: 1.6;
@@ -126,22 +173,10 @@ body {
 .hero-section {
   padding: 100px 0 80px;
   position: relative;
-  background-image: url('/assets/images/hero1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(90deg, #5de0e6, #004aad);
   color: #fff;
   overflow: hidden;
   min-height: 600px;
-}
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
 }
 .hero-content {
   display: flex;
@@ -151,29 +186,53 @@ body {
 }
 .hero-text-wrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   width: 100%;
   position: relative;
   z-index: 3;
 }
 .hero-text-box {
-  background-color: rgba(0, 90, 207, 0.526);
-  backdrop-filter: blur(5px);
-  border-radius: var(--radius);
   padding: 30px;
   max-width: 600px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .hero-text-col {
   padding: 0;
 }
-.hero-title {
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin-bottom: 24px;
-  line-height: 1.2;
-  color: #fff;
+
+/* Hero image styles */
+.hero-image {
+  position: absolute;
+  right: -190px; /* Move further away from text */
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 90%; /* 3x larger than before (40% * 3 = 120%) */
+  height: auto;
+  z-index: 2;
+}
+
+/* RTL hero image styles */
+[dir="rtl"] .hero-image {
+  right: auto;
+  left: -50px; /* Move further away from text */
+}
+/* Apply stroke effect to hero title */
+.hero-section h1 {
+  color: transparent; /* Hide the white fill */
+  -webkit-text-stroke: 2px #fff; /* Add a 2px white border */
+  display: inline-block; /* Helps with rendering */
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 900 !important; /* Forces the heavy "Black" font */
+  text-transform: uppercase !important; /* Makes it ALL CAPS */
+  line-height: 1.1; /* Tighter spacing for big capital letters */
+  font-size: 3.8rem; /* Make it slightly bigger to match the boldness */
+  max-width: 500px; /* Smaller width to force text into exactly 2 lines */
+  word-wrap: break-word; /* Ensure words break if needed */
+}
+
+/* Fix Hero section alignment */
+.hero-text-box ul, .hero-text-box li {
+  padding: 0;
+  margin: 0;
 }
 .hero-subtitle {
   font-size: 1.25rem;
